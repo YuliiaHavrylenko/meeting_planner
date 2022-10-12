@@ -2,18 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/website/home.css" />
     <title>The Meeting Planner Application</title>
 </head>
 <body>
-<h1>Meeting Planner</h1>
-<h2>Meetings</h2>
-<ul>
-    {% for meeting in meetings %}
+<div class="content">
+  <h1>Meeting Planner</h1>
+    <div class="welcome">
+        <div class="meetings">
+
+    <h2>Meetings</h2>
+    <ul>
+        {% for meeting in meetings %}
     <li>
         <a href="{% url 'detail' meeting.id %}">{{meeting.title}}</a>
     </li>
     {% endfor %}
-</ul>
-<a href="{% url 'rooms_list' %}">Rooms</a>
+    </ul>
+        </div>
+            <div class="links">
+                <a href="{% url 'form' %}">Plan a New Meeting</a>
+                <a href="{% url 'rooms_list' %}">Rooms List</a>
+    </div>
+    </div>
+
+
+</div>
 </body>
 </html>
