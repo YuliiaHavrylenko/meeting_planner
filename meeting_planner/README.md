@@ -7,12 +7,12 @@ The website help to manage meetings. You can plan new meetings and using the adm
 <p align="center">
 
 ![](screenshots/welcome-screenshot.png)
+  
+![](screenshots/create-room.png)
 
 ![](screenshots/Roomlists.png)
 
-![](screenshots/Room Example.png)
-
-![](screenshots/Create rooms.png)
+![](screenshots/room-exmpl.png)
 </p>
 
 ### About the project.
